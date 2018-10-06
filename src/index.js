@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import YTSearch  from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 
 // Create  a new component. This Component should produce
@@ -7,7 +9,11 @@ import SearchBar from './components/search_bar';
 
 
 // let api_key = process.env.API_KEY;
-let api_key = 'AIzaSyAKV7juZoS1D3vxgZ-oyOftnv5Uf1Sfe8';
+let api_key = 'AIzaSyAKV7juZoS1D3vxgZ-oyOftnv5Uf1Sfe8M';
+
+YTSearch({key: api_key, term: 'surfboards'}, function(data){
+    console.log(data);
+});
 console.log(api_key)
 const App = function () {
     return (<div>
