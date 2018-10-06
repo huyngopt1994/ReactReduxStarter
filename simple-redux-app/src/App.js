@@ -13,6 +13,8 @@ import { store } from './store';
 
 
 class App extends Component {
+
+
     render() {
         // We can return a list instead of a div because of functionality of React v16
         return [

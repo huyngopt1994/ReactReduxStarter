@@ -11,10 +11,10 @@ function dispatchBtnAction(event) {
 
 const ButtonGroup = ({technologies}) => (
     <div>
-        {technologies.map((tech) => (
+        {technologies.map((tech, id) => (
             <button
                 data-tech={tech}
-                key={`btn-${tech.id}`}
+                key={`btn-${id}`}
                 className="hello-btn"
                 onClick={dispatchBtnAction}
             >
