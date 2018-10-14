@@ -1,7 +1,7 @@
 // Component Sidebar
 import React, {Component} from "react";
 import "./Sidebar.css";
-import User from "./User"
+import User from "../containers/User"
 export class Sidebar extends Component {
 
     render() {
