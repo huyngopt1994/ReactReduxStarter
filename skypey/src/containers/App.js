@@ -8,12 +8,12 @@ import  _ from 'lodash'; // using it to convert objects to array
 
 class App extends Component {
     render() {
-        const contacts = store.getState().contacts;
+        const { contacts, user, activeUserId } = store.getState();
         console.log(contacts);
         return (
             <div className="App">
                 <Sidebar contacts={_.values(contacts)}/>
-                <Main/>
+                <Main user={user} activeUserId={activeUserId} />
             </div>
         );
     };
