@@ -8,6 +8,7 @@ import "./ChatWindow.css";
 
 const ChatWindow = ({activeUserId}) => {
     const state = store.getState();
+    console.log(state);
     const activeUser = state.contacts[activeUserId];
     const activeMsgs = state.messages[activeUserId];
     const {typing} = state;
