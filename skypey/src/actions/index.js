@@ -1,7 +1,12 @@
-import { SET_ACTIVE_USER_ID } from "../constants/action-types";
-
+import {SET_ACTIVE_USER_ID} from "../constants/action-types";
+import {SET_TYPING_VALUE} from "../constants/action-types";
 // Take id an return an object with type.
 export const setActiveUserId = id => ({
     type: SET_ACTIVE_USER_ID,
-    payload:id
+    payload: id
 });
+
+export const setTypingValue = value => ({
+    type: SET_TYPING_VALUE,
+    payload: value
+})
